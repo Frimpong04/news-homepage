@@ -1,0 +1,165 @@
+/* Reset global styles */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* global styles */
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* body styles */
+body {
+    /* border:1px solid blue; */
+    display:grid;
+    place-content: center;
+}
+/* main-container styles */
+.main-container {
+    max-width: 980px;
+    display: grid;
+    gap: 3rem;
+    /* border:1px solid red; */
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.logo-container {
+    flex: 1;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+}
+
+/* main content styles */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit minmax(375px, 1fr));
+    gap: 2rem;
+    grid-template-areas:"a a b"
+                        "c d b"
+                        "e f b"
+                        "g h i";
+}
+
+.hero-image {
+    grid-area: a;
+
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    grid-area: c;
+    font-size: 2rem;
+}
+
+.main-text {
+    grid-area: d;
+}
+
+.main-text p {
+    margin-bottom: 1.5rem;
+}
+
+.main-text button {
+    padding: 1rem 2rem;
+    border:none;
+    color: white;
+    background-color: rgb(231, 67, 67);
+}
+
+/* aside section */
+.new-container {
+    grid-area: b;
+    border:1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.new-container h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.new-container h3 {
+    font-size: 1.8rem;
+    margin-bottom:1rem;
+}
+
+.new-container p {
+    margin-bottom: 1rem;
+}
+
+.footer-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: 1px solid green;
+}
+.footer-item-image-container {
+    flex:1 1 2rem;
+}
+
+.sub-item {
+    flex: 1 1 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sub-item h3 {
+    font-size: 3.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.sub-item h4 {
+    font-size: 1.8rem; 
+    margin-bottom: 0.5rem; 
+}
+
+.sub-item p {
+    font-size:1.5rem;
+}
+.footer-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border:1px solid gold;
+}
+.footer-item-one {
+    grid-area: g;
+}
+
+.footer-item-two {
+    grid-area: h;
+}
+
+.footer-item-three {
+    grid-area: i;
+}
