@@ -278,14 +278,13 @@ nav {
         
     }
 
-    
     .open-menu {
-        position: absolute;
+        position: fixed;
         z-index:1;
-        width: 80%;
+        width: 90%;
         top:0px;
         right:0px;
-        min-height: 100vh;
+        height: 100vh;
         background-color: var(--Off-white);
         display: flex;
         flex-direction: column;
